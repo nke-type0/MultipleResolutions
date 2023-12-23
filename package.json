@@ -1,0 +1,10 @@
+{
+  "name": "com.nke.multipleresolutions",
+  "version": "0.1.0",
+  "displayName": "MultipleResolutions",
+  "description": "This is a MultipleResolutions package",
+  "unity": "2020.2",
+  "dependencies": {
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts"
+ }
+}
