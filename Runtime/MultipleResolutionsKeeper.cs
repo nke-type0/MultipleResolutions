@@ -1,5 +1,4 @@
-﻿using UniRx;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace MultipleResolutions
@@ -9,9 +8,6 @@ namespace MultipleResolutions
         [SerializeField] private CanvasScaler _canvasScaler;
         [SerializeField] private AspectKeeper _aspectKeeper;
         [SerializeField] private Vector2 _aspectVec = new Vector2(750, 1334);
-
-        private ReactiveProperty<DeviceOrientation> _reactOrient = new ReactiveProperty<DeviceOrientation>();
-        public ReactiveProperty<DeviceOrientation> ReactOrient => _reactOrient;
 
         private DeviceOrientation _prevOrientation;
 
