@@ -21,7 +21,7 @@ namespace MultipleResolutions
             if (_prevOrientation != currentOrientation)
             {
                 _prevOrientation = currentOrientation;
-                _reactOrient.Value = _prevOrientation;
+                ChangeAspect(_prevOrientation);
             }
         }
 
