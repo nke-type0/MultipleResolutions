@@ -6,7 +6,7 @@ namespace MultipleResolutions
     public class AspectKeeper : MonoBehaviour
     {
         [SerializeField] private Camera _targetCamera;
-        [SerializeField] private Vector2 _aspectVec;
+        [SerializeField] private Vector2 _aspectVec = new Vector2(750, 1334);
 
         private float _screenAspect;
         private float _targetAspect;
