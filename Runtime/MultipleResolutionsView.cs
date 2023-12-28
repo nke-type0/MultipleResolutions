@@ -6,9 +6,9 @@ namespace MultipleResolutions
 {
     public class MultipleResolutionsView : MonoBehaviour
     {
-        [SerializeField] CanvasScaler _canvasScaler;
-        [SerializeField] AspectKeeper _aspectKeeper;
-        [SerializeField] Vector2 _aspectVec = new Vector2(750, 1334);
+        [SerializeField] private CanvasScaler _canvasScaler;
+        [SerializeField] private AspectKeeper _aspectKeeper;
+        [SerializeField] private Vector2 _aspectVec = new Vector2(750, 1334);
 
         private ReactiveProperty<DeviceOrientation> _reactOrient = new ReactiveProperty<DeviceOrientation>();
         public ReactiveProperty<DeviceOrientation> ReactOrient => _reactOrient;
