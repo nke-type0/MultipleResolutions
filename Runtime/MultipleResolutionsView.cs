@@ -13,15 +13,15 @@ namespace MultipleResolutions
         private ReactiveProperty<DeviceOrientation> _reactOrient = new ReactiveProperty<DeviceOrientation>();
         public ReactiveProperty<DeviceOrientation> ReactOrient => _reactOrient;
 
-        private DeviceOrientation PrevOrientation;
+        private DeviceOrientation _prevOrientation;
 
         private void Update()
         {
             var currentOrientation = GetOrientation();
-            if (PrevOrientation != currentOrientation)
+            if (_prevOrientation != currentOrientation)
             {
-                PrevOrientation = currentOrientation;
-                _reactOrient.Value = PrevOrientation;
+                _prevOrientation = currentOrientation;
+                _reactOrient.Value = _prevOrientation;
             }
         }
 
