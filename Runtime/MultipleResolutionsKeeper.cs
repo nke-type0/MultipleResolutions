@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace MultipleResolutions
 {
-    public class MultipleResolutionsView : MonoBehaviour
+    public class MultipleResolutionsKeeper : MonoBehaviour
     {
         [SerializeField] private CanvasScaler _canvasScaler;
         [SerializeField] private AspectKeeper _aspectKeeper;
