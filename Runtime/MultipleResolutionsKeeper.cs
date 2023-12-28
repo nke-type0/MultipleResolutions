@@ -47,7 +47,7 @@ namespace MultipleResolutions
         /// <summary>
         /// aspect ratio exchange
         /// </summary>
-        public void ChangeAspect(DeviceOrientation orientation)
+        private void ChangeAspect(DeviceOrientation orientation)
         {
             if (orientation == DeviceOrientation.Portrait
                 || orientation == DeviceOrientation.PortraitUpsideDown)
